@@ -60,7 +60,13 @@ jobs:
         sed -i '/CONFIG_FIRMWARE_INCLUDE_FRPS/d' .config #删除配置项adbyby plus+
         sed -i '/CONFIG_FIRMWARE_INCLUDE_TUNSAFE/d' .config #删除配置项adbyby plus+
         sed -i '/CONFIG_FIRMWARE_INCLUDE_ALIDDNS/d' .config #删除配置项阿里DDNS
-        sed -i '/CONFIG_FIRMWARE_INCLUDE_SMARTDNS/d' .config
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_SMARTDNS/d' .config #删除配置项SMARTDNS
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_SMARTDNSBIN/d' .config #删除配置项SMARTDNSBIN
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_V2RAY/d' .config #删除配置项V2RAY
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_TROJAN/d' .config #删除配置项STROJAN
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_KOOLPROXY/d' .config #删除配置项KOOLPROXY
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_SMARTDNSBIN/d' .config #删除配置项SMARTDNSBIN
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_SMARTDNSBIN/d' .config #删除配置项SMARTDNSBIN
         ######################################################################
         #以下选项是定义你需要的功能（y=集成,n=忽略），重新写入到.config文件
         ######################################################################
